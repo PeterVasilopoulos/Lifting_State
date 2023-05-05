@@ -9,9 +9,10 @@ const MessageForm = (props) => {
     const handleSubmit = (e) => {
         // Prevents page reload on submit click
         e.preventDefault();
-        
+        // Sends message to message board
         props.onNewMessage(msg);
-
+        // Clears the text box
+        setMsg("");
     };
 
     return (
